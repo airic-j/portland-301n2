@@ -1,3 +1,5 @@
+/* base */
+
 html,body {
   height: 100%;
   margin: 0 2%;
@@ -18,49 +20,25 @@ a:hover {
   cursor: pointer;
 }
 
+/* /base */
 
 
-/* style for nav */
-
-#ericImg {
-    width: 100px;
-    display: block;
-    margin: 20px auto;
-    border: 1px solid red;
-    border-radius: 500px;
-    -webkit-border-radius: 500px;
-    -moz-border-radius: 500px;
-}
-
-#pageTitle {
-  font-size: 60px;
-  display: block;
-  text-align: center;
-  font-weight: 300;
-  color: #797979;
-}
-
-
-/* style for sections */
+/* layout */
 
 section {
   margin-top: 20px;
 }
 
-/* style for projects */
+
+
+
+/* /layout */
+
+
+/* module */
 
 .prototype {
   display: none;
-}
-
-ul {
-  list-style: none;
-  padding-left: 0;
-  margin-bottom: 40px;
-}
-
-li, #projects img {
-  margin-bottom: 10px;
 }
 
 .fullWidthImages {
@@ -85,6 +63,15 @@ li, #projects img {
   font-size: 1.2em;
 }
 
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 40px;
+}
+
+li, #projects img {
+  margin-bottom: 10px;
+}
 
 h2 {
   font-size: 1.8em;
@@ -98,35 +85,21 @@ p, .projectDescription, li>a {
   font-size: 1.3em;
 }
 
-
-
-/* style for nav */
-
-.nav, .stickyNav {
-  display: block;
-  font-size: 1.3em;
-  background-color: white;
-  margin: 0 auto;
-  width: 100%;
+footer p {
   text-align: center;
+  font-size: 0.7em;
+  margin: 20px auto;
 }
 
+/* /module */
 
-.nav a, .stickyNav a {
-  font-size: 0.9em;
-  display: inline-block;
-  margin-right: 15px;
-}
 
-#pageTitle {
-  font-size: 2.0em;
-  display: block;
-  margin: 10px auto;
-}
+/* state */
 
 .selected {
   color: red;
 }
+
 
 .stickyNav {
   position: fixed;
@@ -156,11 +129,51 @@ p, .projectDescription, li>a {
   display: none;
 }
 
-footer p {
+.nav, .stickyNav {
+  display: block;
+  font-size: 1.3em;
+  background-color: white;
+  margin: 0 auto;
+  width: 100%;
   text-align: center;
-  font-size: 0.7em;
-  margin: 20px auto;
 }
+
+.nav a, .stickyNav a {
+  font-size: 0.9em;
+  display: inline-block;
+  margin-right: 15px;
+}
+
+/* /state */
+
+
+/* theme */
+
+#pageTitle {
+  font-size: 2.0em;
+  display: block;
+  margin: 10px auto;
+}
+
+#ericImg {
+    width: 100px;
+    display: block;
+    margin: 20px auto;
+    border: 1px solid red;
+    border-radius: 500px;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+}
+
+#pageTitle {
+  font-size: 60px;
+  display: block;
+  text-align: center;
+  font-weight: 300;
+  color: #797979;
+}
+
+/* /theme */
 
 
 /* twitter bootstrap fluid row styles */
@@ -328,12 +341,3 @@ footer p {
   .projectLink {
     font-size: 0.8em;
   }
-
-
-
-
-
-
-}
-@media screen and (min-width: 1000px) {...}
-@media screen and (min-width: 1400px) {...}
