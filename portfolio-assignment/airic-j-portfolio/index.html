@@ -11,7 +11,17 @@
         <!-- styles -->
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.css">
         <link href="style.css" type="text/css" rel="stylesheet">
+        <script id="projectTemplate" type="text/x-handlebars-template">
+          <ul>
+            <li id="title" class="projectName">{{title}}</li>
+            <li id="date" class="projectDate">{{date}}</li>
+            <img id="projectImage" class='fullWidthImages' src="{{image}}">
+            <li id="link" class="projectLink"><a href="{{link}}" target="_blank">View on web</a></li>
+            <li id="description" class="projectDescription">{{description}}</li>
+          </ul>
+        </script>
     </head>
+
 
     <body>
     	<header>
@@ -66,14 +76,7 @@
 		<section id="projects">
 			<div class="row-fluid">
 	    		<h2>Projects</h2>
-	    		<div class="prototype">
-		    		<ul>
-		    			<li id="title" class="projectName">Project name</li>
-		    			<li id="date" class="projectDate">2016-01-01</li>
-		    			<img id="projectImage" class='fullWidthImages' src="http://placehold.it/600x200">
-		    			<li id="link" class="projectLink"><a href="link.com" target="_blank">View on web</a></li>
-		    			<li id="description" class="projectDescription">Description text</li>
-		    		</ul>
+	    		<div id="projectHolder">
 		    	</div>
 	    	</div>
 	    </section>
@@ -105,7 +108,7 @@
 
     <!-- js -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"></script>
     <script src="projectData.js"></script>
     <script src="lab.js"></script>
     <!-- js -->

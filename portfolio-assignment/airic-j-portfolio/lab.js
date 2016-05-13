@@ -14,17 +14,11 @@ $('document').ready(function () {
   }
 
   Project.prototype.toHtml = function() {
-    var $newProject = $('.prototype').clone();
-    $newProject.find('#title').html(this.title);
-    $newProject.find('#date').html(this.date);
-    $newProject.find('#link a').attr('href',this.link);
-    // $newProject.find('#link a').html(this.link);
-    $newProject.find('#description').html(this.description);
-    // TODO get this working
-    $newProject.find('#projectImage').attr('src',this.image);
-
-    $newProject.removeClass('prototype');
-    return $newProject;
+    // use handlebars
+    var templateScript = $('#projectTemplate').html();
+    var projectTemplate = Handlebars.compile(templateScript);
+    var html = projectTemplate(this);
+    return(html);
   };
 
   projectData.forEach(function(projectData){
