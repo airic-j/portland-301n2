@@ -47,6 +47,14 @@ $('document').ready(function () {
     stickyNav();
   });
 
+  // connect page weather conditions
+  var weatherAPI = 'http://api.wunderground.com/api/c57bffbbb79db788/geolookup/conditions/q/OR/Portland.json';
+  var successFunction = function(data) {
+    $('.weather').append((' where it is ' + Math.round(data.current_observation.temp_f) + '&deg; F') + (' and ' + data.current_observation.weather).toLowerCase());
+    console.log(data.current_observation.temp_f);
+  };//end of weather callback
+  $.getJSON(weatherAPI, successFunction);
+
 
 	// change visible tab by click on nav links
 
