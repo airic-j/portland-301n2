@@ -4,11 +4,27 @@ html,body {
   height: 100%;
   margin: 0 2%;
   padding: 5px;
-  font-family: helvetica;
+  font-family: helvetica, sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Raleway', sans-serif;
 }
 
 h1, h2, h3, p, li, a {
   color: #797979;
+}
+
+h1 {
+  font-size: 2.0rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.4rem;
 }
 
 a {
@@ -50,11 +66,11 @@ section {
 }
 
 .projectName {
-  font-size: 1.6em;
+  font-size: 1.6rem;
 }
 
 .projectDate {
-  font-size: 1.0em;
+  font-size: 1.0rem;
 }
 
 ul {
@@ -67,21 +83,13 @@ li, #projects img {
   margin-bottom: 10px;
 }
 
-h2 {
-  font-size: 1.8em;
-}
-
-h3 {
-  font-size: 1.4em;
-}
-
 p, .projectDescription, li>a {
-  font-size: 1.3em;
+  font-size: 1.1rem;
 }
 
 footer p {
   text-align: center;
-  font-size: 0.7em;
+  font-size: 0.7rem;
   margin: 20px auto;
 }
 
@@ -125,7 +133,7 @@ footer p {
 
 .nav, .stickyNav {
   display: block;
-  font-size: 1.3em;
+  font-size: 1.3rem;
   background-color: white;
   margin: 0 auto;
   width: 100%;
@@ -133,7 +141,6 @@ footer p {
 }
 
 .nav a, .stickyNav a {
-  font-size: 0.9em;
   display: inline-block;
   margin-right: 15px;
 }
@@ -144,7 +151,7 @@ footer p {
 /* theme */
 
 #pageTitle {
-  font-size: 2.0em;
+  font-size: 2.0rem;
   display: block;
   margin: 10px auto;
 }
@@ -160,7 +167,6 @@ footer p {
 }
 
 #pageTitle {
-  font-size: 60px;
   display: block;
   text-align: center;
   font-weight: 300;
@@ -294,29 +300,32 @@ footer p {
   }
 
   .stickyNav a, .nav a {
-    font-size: 0.9em;
+    font-size: 1.2rem;
     font-weight: 300;
   }
 
 
   #pageTitle {
-    font-size: 1.7em;
-    margin-top: -0.05em;
+    margin-top: -0.05rem;
     margin-left: 10px;
     float: left;
     line-height: 102px;
   }
 
+  h1 {
+    font-size: 1.9rem;
+  }
+
   h2 {
-    font-size: 1.8em;
+    font-size: 1.5rem;
   }
 
   h3 {
-    font-size: 1.4em;
+    font-size: 1.4rem;
   }
 
   p, .projectDescription, li>a {
-    font-size: 1.0em;
+    font-size: 1.0rem;
   }
 
   .nav  {
@@ -325,13 +334,13 @@ footer p {
   }
 
   .projectName {
-    font-size: 1.6em;
+    font-size: 1.6rem;
   }
 
   .projectDate {
-    font-size: 0.9em;
+    font-size: 0.9rem;
   }
 
   .projectLink {
-    font-size: 0.8em;
+    font-size: 0.8rem;
   }
