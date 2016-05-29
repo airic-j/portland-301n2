@@ -2,6 +2,15 @@
 
 // controller
 
+  var Portfolio = {};
+
+  Portfolio.initPage = function() {
+    Portfolio.showAbout();
+    Portfolio.nav();
+    Portfolio.getWeather();
+    Project.getData();
+  };
+
 // project constructor function
   function Project(x) {
     this.title = x.title;
@@ -11,12 +20,6 @@
     this.image = x.image;
   }
 
-  Project.initPage = function() {
-    Project.showAbout();
-    Project.nav();
-    Project.getWeather();
-    Project.getData();
-  };
 
 // ajax call for project data, map to array and append as HTML to page
   Project.getData = function() {
@@ -36,7 +39,7 @@
 // view
 
   //sticky nav
-  Project.nav = function() {
+  Portfolio.nav = function() {
     var topOfNav = $('.nav').offset().top;
     function stickyNav() {
       var scrollTop = $(window).scrollTop();
@@ -62,14 +65,11 @@
   };
 
   // hide projects at initial page load
-  Project.showAbout = function() {
-    function hideSection() {
-      $('section').not('#about').hide();
-    };
-    hideSection();
+  Portfolio.showAbout = function() {
+    $('section').not('#about').hide();
   };
 
-  Project.getWeather = function(){
+  Portfolio.getWeather = function(){
     // connect page weather conditions
     var weatherAPI = 'http://api.wunderground.com/api/c57bffbbb79db788/geolookup/conditions/q/OR/Portland.json';
     var successFunction = function(data) {
@@ -89,5 +89,5 @@
 
 // end view
 
-  module.Project = Project;
+  module.Portfolio = Portfolio;
 })(window); // end iffe
