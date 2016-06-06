@@ -5,6 +5,7 @@
   // project constructor function
   function Project(x) {
     this.title = x.title;
+    this.category = x.category;
     this.date = x.date;
     this.description = x.description;
     this.link = x.link;
