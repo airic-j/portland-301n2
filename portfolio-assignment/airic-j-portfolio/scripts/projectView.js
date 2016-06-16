@@ -1,5 +1,3 @@
-// TODO assignment 09 - make this a real iffe
-// $('document').ready(function () {
 (function(module){
 
   // project constructor function
@@ -18,7 +16,6 @@
       $('section').not('#about').hide();
     },
 
-    // todo assignment 09
     toggleStickyNav: function(topOfNav) {
       var scrollTop = $(window).scrollTop();
 
@@ -90,8 +87,5 @@
   });
 
   module.ProjectsModule = ProjectsModule;
-
-// }); // end document.ready
-
 
 })(window);
