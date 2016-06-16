@@ -1,14 +1,11 @@
 (function(module){
 
   // create a controller variable to attach iffe to
-  var portfolioController = {};
+  var projectController = {};
 
-  portfolioController.initIndex = function(){
-    ProjectsModule.init();
-    console.log('init index');
+  projectController.index = function(){
+    PortfolioModule.initProjects();
   };
 
-  portfolioController.initIndex();
-
-  module.portfolioController = portfolioController;
+  module.projectController = projectController;
 })(window);

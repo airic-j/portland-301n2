@@ -1,4 +1,5 @@
-page('/',aboutController.init);
-page('/projects', projectController.init);
-page('/connect', connectController.init);
+page('/', aboutController.index);
+page('/about', aboutController.index);
+page('/projects', projectController.index);
+page('/connect', connectController.index);
 page();
