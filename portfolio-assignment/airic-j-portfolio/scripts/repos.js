@@ -5,6 +5,8 @@
 
   // done? : Refactor and simplify this ajax call into a get request
   // to the proxy end point provided by server.js.
+
+  // not sure if I'm doing the .env github token properly, it seems to work without it
   repos.requestRepos = function(callback) {
     $.ajax({
       url: 'https://api.github.com/users/airic-j/repos' +
@@ -19,6 +21,7 @@
 
   repos.with = function(attr) {
     return repos.all.filter(function(repo) {
+      console.log('repos with running');
       return repo[attr];
     });
   };
