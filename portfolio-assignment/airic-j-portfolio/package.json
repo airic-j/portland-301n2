@@ -1,6 +1,7 @@
 {
   "name": "airic-j-portfolio",
   "version": "1.0.0",
+  "private": "true",
   "description": "A portfolio for Eric Johnson, built during Code Fellows 301 Course",
   "main": "server.js",
   "scripts": {
