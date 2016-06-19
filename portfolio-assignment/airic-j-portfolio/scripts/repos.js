@@ -9,7 +9,7 @@
   // not sure if I'm doing the .env github token properly, it seems to work without it
   repos.requestRepos = function(callback) {
     $.ajax({
-      url: 'https://api.github.com/users/airic-j/repos' +
+      url: '/github/users/airic-j/repos' +
             '?per_page=100' +
             '&sort=updated',
       type: 'GET',
